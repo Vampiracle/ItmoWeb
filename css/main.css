@@ -7,6 +7,10 @@ body {
     background: #FFFFFF;
 }
 
+
+
+
+
 main {
     padding: 10px;
 }
@@ -17,7 +21,7 @@ header {
 
 footer {
     text-align: center;
-    /*background: #E3BDF0;*/
+
     text-decoration: none;
 
 }
@@ -70,6 +74,7 @@ section {
     margin-right: 40px;
     text-align: center;
     align-items: center;
+    background-color: #F0E98C;
 
 }
 
@@ -78,8 +83,24 @@ section {
     font-size: 22px;
     text-decoration: none;
     color: #00313D;
+    background-color: #F0E98C;
 
 }
+
+.active {
+    text-decoration: underline;
+    background-color: #F0E98C;
+}
+.menu__a:visited {
+    background: #FAFAFA;
+    background-color: #F0E98C;
+}
+.menu__a:hover {
+    color: #ff9933;
+    background-color: #F0E98C;
+}
+
+
 .footer__refs {
     text-decoration: none;
 }
@@ -106,6 +127,56 @@ section {
     font-style: italic;
 }
 
+li:nth-child(odd) {
+    background-color: lightblue;
+}
+
+.main__table
+{
+    display: grid;
+    text-align: center;
+    margin: 2% 3%;
+    font-size: 120%;
+    border-spacing: 15px 15px;
+}
+
+.main__table__content:nth-child(2n)
+{
+    background: #f0f0f0;
+}
+
+.content__page
+{
+    margin: 8% 2% 3%;
+}
+
+@media screen and (max-device-width: 1000px) {
+    .main__table
+    {
+        display: none;
+    }
+}
+
+.constructor
+{
+    line-height: normal;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.constructor__form_wrapper {
+    margin: 0 30px 30px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+
+}
+.constructor__form_wrapper__block{
+    margin-left: 10px;
+}
+.constructor__table{
+}
 
 
 
